@@ -1,0 +1,175 @@
+﻿<Page
+    x:Class="GoodsNextDoor.HubPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GoodsNextDoor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:GoodsNextDoor.Data"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    d:DataContext="{Binding Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:Key="HubSectionHeaderTemplate">
+            <TextBlock Margin="0,0,0,-9.5" Text="{Binding}"/>
+        </DataTemplate>
+
+        <!-- Grid-appropriate item template as seen in section 2 -->
+        <DataTemplate x:Key="Standard200x180TileItemTemplate">
+            <Grid Margin="0,0,9.5,9.5" Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                <Image Source="{Binding ImagePath}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}" Height="138.5" Width="138.5"/>
+                <TextBlock Text="{Binding Title}" VerticalAlignment="Bottom" Margin="9.5,0,0,6.5" Style="{ThemeResource BaseTextBlockStyle}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="StandardTripleLineItemTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,9.5,0,0" Grid.Column="0" HorizontalAlignment="Left">
+                    <Image Source="{Binding ImagePath}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}" Height="79" Width="79"/>
+                </Border>
+                <StackPanel Grid.Column="1" Margin="14.5,0,0,0">
+                    <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}"/>
+                    <TextBlock Text="{Binding Description}" Style="{ThemeResource ListViewItemContentTextBlockStyle}" Foreground="{ThemeResource PhoneMidBrush}" />
+                    <TextBlock Text="{Binding Subtitle}" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}" />
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="StandardDoubleLineItemTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,9.5,0,0" Grid.Column="0" HorizontalAlignment="Left">
+                    <Image Source="{Binding ImagePath}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}" Height="79" Width="79"/>
+                </Border>
+                <StackPanel Grid.Column="1" Margin="14.5,0,0,0">
+                    <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}"/>
+                    <TextBlock Text="{Binding Subtitle}" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Hub x:Name="Hub" x:Uid="Hub" Header="Goods Next Door" Background="{ThemeResource HubBackgroundImageBrush}">
+            <HubSection x:Uid="HubSection1" Header="Search" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <ListView>
+                        <ComboBox x:Name="Categories" HorizontalAlignment="Center" VerticalAlignment="Top" Width="280" PlaceholderText="Select Category" >
+                            <x:String>Clothing</x:String>
+                            <x:String>Housing</x:String>
+                            <x:String>Toys</x:String>
+                            <x:String>Books</x:String>
+                            <x:String>Kitchen</x:String>
+                        </ComboBox>
+                        <TextBox x:Name="Keywords" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="280" PlaceholderText="Keywords" />
+                        <ComboBox x:Name="Location" HorizontalAlignment="Center" VerticalAlignment="Top" Width="280" PlaceholderText="Location" SelectedIndex="2">
+                            <x:String>Seattle</x:String>
+                            <x:String>Woodinville</x:String>
+                            <x:String>Bothell</x:String>
+                            <x:String>Lynnwood</x:String>
+                            <x:String>Redmond</x:String>
+                        </ComboBox>
+                        <Button x:ConnectionId='2' x:Name="SearchButton" Content="Search" HorizontalAlignment="Center" Height="50" Width="80"                     />
+                    </ListView>
+                </DataTemplate>
+
+            </HubSection>
+
+            <HubSection x:Uid="HubSection2" Header="Post" Width="Auto"
+                         DataContext="{Binding Groups[0]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <ListView>
+                        <ComboBox x:Name="Categories" HorizontalAlignment="Center" VerticalAlignment="Top" Width="280" PlaceholderText="Select Category" >
+                            <x:String>Clothing</x:String>
+                            <x:String>Housing</x:String>
+                            <x:String>Toys</x:String>
+                            <x:String>Books</x:String>
+                            <x:String>Kitchen</x:String>
+                        </ComboBox>
+                        <TextBox x:Name="Title" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="280" PlaceholderText="Title" />
+                        <TextBox x:Name="Desc" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="280" PlaceholderText="Description" />
+                        <Grid>
+                            <Button>Choose Photo</Button>
+                            <Button x:ConnectionId='1' Margin="145,0,-139,0" Width="134"                  >Take Photo</Button>
+                        </Grid>
+                        <ComboBox x:Name="Location" HorizontalAlignment="Center" VerticalAlignment="Top" Width="280" PlaceholderText="Location" >
+                            <x:String>Seattle</x:String>
+                            <x:String>Woodinville</x:String>
+                            <x:String>Bothell</x:String>
+                            <x:String>Lynnwood</x:String>
+                            <x:String>Redmond</x:String>
+                        </ComboBox>
+                        <Button Content="Post" HorizontalAlignment="Center" Height="50" Width="80"/>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+            <!--HubSection x:Uid="HubSection3" Header="SECTION 3"
+                        DataContext="{Binding Groups[1]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <ListView 
+                        AutomationProperties.AutomationId="ItemListViewSection3"
+                        AutomationProperties.Name="Items In Group"
+                        SelectionMode="None"
+                        IsItemClickEnabled="True"
+                        ItemsSource="{Binding Items}"
+                        ItemTemplate="{StaticResource StandardTripleLineItemTemplate}"
+                        ItemClick="ItemView_ItemClick"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True">
+                    </ListView>
+                </DataTemplate>
+            </>
+
+            <HubSection x:Uid="HubSection4" Header="SECTION 4"
+                        DataContext="{Binding Groups[2]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <ListView 
+                        AutomationProperties.AutomationId="ItemListViewSection4"
+                        AutomationProperties.Name="Items In Group"
+                        SelectionMode="None"
+                        IsItemClickEnabled="True"
+                        ItemsSource="{Binding Items}"
+                        ItemClick="ItemView_ItemClick"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="0,0,0,19">
+                                    <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}"/>
+                                    <TextBlock Text="{Binding Subtitle}" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="HubSection5" Header="SECTION 5"
+                        DataContext="{Binding Groups[3]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <ListView 
+                        AutomationProperties.AutomationId="ItemListViewSection5"
+                        AutomationProperties.Name="Items In Group"
+                        SelectionMode="None"
+                        IsItemClickEnabled="True"
+                        ItemsSource="{Binding Items}"
+                        ItemTemplate="{StaticResource StandardDoubleLineItemTemplate}"
+                        ItemClick="ItemView_ItemClick"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True">
+                    </ListView>
+                </DataTemplate>
+            </HubSection-->
+        </Hub>
+        <CaptureElement x:Name="PhotoPreview"/>
+    </Grid>    
+</Page>
+
