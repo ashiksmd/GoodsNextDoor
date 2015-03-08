@@ -26,6 +26,11 @@ namespace GoodsNextDoor
     /// </summary>
     public sealed partial class App : Application
     {
+        // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
+        public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient goodsnextdoorClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
+        "https://goodsnextdoor.azure-mobile.net/",
+        "ExPbSIjSfDbjkzmSJvqrYNOCxMDZui63");
+
         private TransitionCollection transitions;
 
         /// <summary>

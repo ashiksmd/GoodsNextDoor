@@ -149,11 +149,6 @@ namespace GoodsNextDoor
 
         #endregion
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private DependencyObject FindChildControl<T>(DependencyObject control, string ctrlName)
         {
             int childNumber = VisualTreeHelper.GetChildrenCount(control);
@@ -190,6 +185,11 @@ namespace GoodsNextDoor
             {
                 throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
             }
+        }
+
+        private void PostItem(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private async void stopCamera()

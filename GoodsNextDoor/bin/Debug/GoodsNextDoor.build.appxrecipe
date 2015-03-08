@@ -7,79 +7,79 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>293f6df2-4d3e-4631-a01f-d312b43bb433</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\GIT\GoodsNextDoor\GoodsNextDoor\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\GoodsNextDoor.exe">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\GoodsNextDoor.exe">
       <PackagePath>GoodsNextDoor.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\DarkGray.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\DarkGray.png">
       <PackagePath>Assets\DarkGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\LightGray.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\LightGray.png">
       <PackagePath>Assets\LightGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\MediumGray.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\MediumGray.png">
       <PackagePath>Assets\MediumGray.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\HubBackground.theme-dark.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\HubBackground.theme-dark.png">
       <PackagePath>Assets\HubBackground.theme-dark.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\HubBackground.theme-light.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\HubBackground.theme-light.png">
       <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\DataModel\SampleData.json">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\HubPage.xbf">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\HubPage.xbf">
       <PackagePath>HubPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\ItemPage.xbf">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\ItemPage.xbf">
       <PackagePath>ItemPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\SectionPage.xbf">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\SectionPage.xbf">
       <PackagePath>SectionPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\GoodsNextDoor.xr.xml">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\GoodsNextDoor.xr.xml">
       <PackagePath>GoodsNextDoor.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ashik\Documents\Visual Studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

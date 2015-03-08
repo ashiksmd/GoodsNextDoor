@@ -1,5 +1,9 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\ashik\documents\visual studio 2013\projects\goodsnextdoor\goodsnextdoor\obj\debug\intermediatexaml\goodsnextdoor.exe" HashGuid="ec0aab64-26c2-7570-61a2-9bc76c46147e" />
+    <ReferenceAssembly PathName="c:\git\goodsnextdoor\packages\windowsazure.mobileservices.1.2.0\lib\wpa81\microsoft.windowsazure.mobile.dll" HashGuid="75ad1dd8-df42-3f21-d7df-94954036a7c7" />
+    <ReferenceAssembly PathName="c:\git\goodsnextdoor\packages\windowsazure.mobileservices.1.2.0\lib\wpa81\microsoft.windowsazure.mobile.ext.dll" HashGuid="7c077f14-eefa-de5e-bd29-3216d68a0c6b" />
+    <ReferenceAssembly PathName="c:\git\goodsnextdoor\packages\newtonsoft.json.6.0.2\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="9d7edd31-e823-430e-c3cf-22078730f8bb" />
+    <ReferenceAssembly PathName="c:\git\goodsnextdoor\packages\microsoft.net.http.2.2.19\lib\wpa81\system.net.http.extensions.dll" HashGuid="1d9d21be-6daa-468f-1b93-4e738d786e1b" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

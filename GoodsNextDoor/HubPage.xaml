@@ -109,7 +109,8 @@
                             <x:String>Lynnwood</x:String>
                             <x:String>Redmond</x:String>
                         </ComboBox>
-                        <Button Content="Post" HorizontalAlignment="Center" Height="50" Width="80"/>
+                        <TextBox x:Name="Contact" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="280" PlaceholderText="Contact Info" />
+                        <Button Content="Post" HorizontalAlignment="Center" Height="50" Width="80" Click="PostItem"/>
                     </ListView>
                 </DataTemplate>
             </HubSection>
