@@ -56,7 +56,7 @@
 
                 if (pickedPhoto) {
                     item.containerName = "goodsnextdoor";
-                    item.resourceName = pickedPhoto.name;
+                    item.resourceName = createGuid() + pickedPhoto.name;
                 }
 
                 DBAccess.postItem(item, function (e) {

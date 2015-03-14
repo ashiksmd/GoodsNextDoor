@@ -1,0 +1,16 @@
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\x86\Debug\ReverseMap\resources.pri
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\x86\Debug\AppxManifest.xml
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\x86\Debug\GoodsNextDoor.build.appxrecipe
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\priconfig.xml
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\priconfig.xml.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\layout.resfiles
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\layout.resfiles.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\resources.resfiles
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\resources.resfiles.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\pri.resfiles
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\pri.resfiles.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\qualifiers.txt
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\qualifiers.txt.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\MobileServices.pri.xml
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\x86\Debug\ProjectArchitectures.txt
