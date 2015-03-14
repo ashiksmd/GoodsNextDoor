@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>post</title>
+
+    <link href="post.css" rel="stylesheet" />
+    <script src="post.js"></script>
+</head>
+<body>
+    <div class="post fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Goods Next Door</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <select id="categories">
+                <option>Books</option>
+                <option>Clothing</option>
+                <option>Electronics</option>
+                <option>Kitchen</option>
+                <option>Toys</option>
+            </select>
+            <input id="title" type="text" placeholder="Title" />
+            <textarea id="desc" placeholder="Description"></textarea>
+            
+            <div id="thumbnail-div" class="hidden"><img id="thumbnail" src="/images/Expand.png"/></div>
+            <button id="pickPhoto">Add Photo</button>
+            
+            <div id="location">Location: Bothell</div>
+
+            <input id="contact" type="text" placeholder="Contact Info" />
+            <button id="submit">Post</button>
+
+            <div id="img-preview-div" class="hidden">
+                <img class="close-icon" src="/images/close.png" />
+                <img id="img-preview" src="/images/Expand.png" />
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿.mapcontrol section {
+	margin: auto 120px;
+}
+
+.phone .mapcontrol .page-section {
+	margin: auto 24px;
+}
+
+.phone .mapcontrol .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+}
+
+.phone .mapcontrol .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
+
+#mapdiv  { 
+    width:100%;  
+    height:100%;  
+    border-color:#0094ff;  
+    background-color:#0094ff;  
+    position:relative; 
+}
+
+.MicrosoftNav.MapTypeId_auto {
+    display: none;
+}
+
+#snapToCurrent {
+    position: absolute;
+    float: right;
+    right: 30px;
+    bottom: 30px;
+}

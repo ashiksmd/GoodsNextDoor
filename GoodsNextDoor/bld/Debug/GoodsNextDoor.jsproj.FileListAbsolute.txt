@@ -1,0 +1,16 @@
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\ReverseMap\resources.pri
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\AppxManifest.xml
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bin\Debug\GoodsNextDoor.build.appxrecipe
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\priconfig.xml
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\priconfig.xml.intermediate
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\layout.resfiles
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\layout.resfiles.intermediate
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\resources.resfiles
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\resources.resfiles.intermediate
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\pri.resfiles
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\pri.resfiles.intermediate
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\qualifiers.txt
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\qualifiers.txt.intermediate
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\MobileServices.pri.xml
+C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\ProjectArchitectures.txt

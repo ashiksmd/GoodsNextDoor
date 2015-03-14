@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="293f6df2-4d3e-4631-a01f-d312b43bb433" Publisher="CN=Ashik" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="293f6df2-4d3e-4631-a01f-d312b43bb433" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="850c34bb-837b-45bf-b07e-590a4fc180a5" Version="1.0.0.0" Publisher="CN=Ashik" />
+  <mp:PhoneIdentity PhoneProductId="850c34bb-837b-45bf-b07e-590a4fc180a5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>GoodsNextDoor</DisplayName>
     <PublisherDisplayName>Ashik</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <Logo>images\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
@@ -15,18 +15,18 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GoodsNextDoor.App">
-      <m3:VisualElements DisplayName="Goods Next Door" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="GoodsNextDoor" ForegroundText="light" BackgroundColor="transparent">
-        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+    <Application Id="App" StartPage="default.html">
+      <m3:VisualElements DisplayName="GoodsNextDoor" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="GoodsNextDoor" ForegroundText="light" BackgroundColor="transparent">
+        <m3:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square71x71Logo="images\Square71x71Logo.png">
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+        <m3:SplashScreen Image="images\SplashScreen.png" />
       </m3:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
     <Capability Name="picturesLibrary" />
-    <DeviceCapability Name="location" />
     <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>
