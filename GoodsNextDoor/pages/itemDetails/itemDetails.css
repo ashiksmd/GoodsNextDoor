@@ -1,12 +1,12 @@
-﻿.post section {
+﻿.itemDetails section {
 	margin: auto 120px;
 }
 
-.phone .post .page-section {
+.phone .itemDetails .page-section {
 	margin: auto 24px;
 }
 
-.phone .post .page-header .titlearea {
+.phone .itemDetails .page-header .titlearea {
 	-ms-grid-column: 1;
 	margin-top: 37px;
 	margin-left: 24px;
@@ -14,7 +14,7 @@
 	width: calc(100vw - 20px);
 }
 
-.phone .post .back-button {
+.phone .itemDetails .back-button {
 	display: none;
 }
 

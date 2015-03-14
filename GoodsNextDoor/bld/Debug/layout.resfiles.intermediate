@@ -238,6 +238,7 @@ css\ui-themed.css
 css\ui-themed.theme-dark.css
 css\ui-themed.theme-light.css
 default.html
+images\ajax-loader.gif
 images\android-location_icon.png
 images\close.png
 images\Expand.png
@@ -259,6 +260,9 @@ packages.config
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
+pages\itemDetails\itemDetails.css
+pages\itemDetails\itemDetails.html
+pages\itemDetails\itemDetails.js
 pages\mapcontrol\mapcontrol.css
 pages\mapcontrol\mapcontrol.html
 pages\mapcontrol\mapcontrol.js

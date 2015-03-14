@@ -85,7 +85,7 @@
                 },
 
                 // Responds to navigation by adding new pages to the DOM. 
-                _navigating: function (args) {
+                _navigating: function (args, callback) {
                     var newElement = this._createPageElement();
                     this._element.appendChild(newElement);
 
@@ -107,7 +107,7 @@
                             oldElement.innerText = "";
                         }
                     }
-
+                    
                     this._lastNavigationPromise = WinJS.Promise.as().then(function () {
                         return WinJS.UI.Pages.render(args.detail.location, newElement, args.detail.state);
                     }).then(cleanup, cleanup);

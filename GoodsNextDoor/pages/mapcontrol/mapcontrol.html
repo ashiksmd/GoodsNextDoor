@@ -4,28 +4,39 @@
     <meta charset="utf-8" />
     <title>mapcontrol</title>
 
-    <link href="/css/ui-themed.css" rel="stylesheet" />
-    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
-    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
-
     <link href="mapcontrol.css" rel="stylesheet" />
+
     <!-- Javascript Libs-->
     <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapicore.js"></script>
     <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapiModules.js"></script>
     <script src="mapcontrol.js"></script>
-
-    <link href="/css/default.css" rel="stylesheet" />
-    <script src="/js/default.js"></script>
-    <script src="/js/navigator.js"></script>
-    <script src="/js/common.js"></script>
 </head>
 <body>
-    <div id="mapdiv"></div>
-    <img id="snapToCurrent" src="/images/android-location_icon.png"/>
-    <!--div class="mapcontrol fragment">
-        <section aria-label="Main content" role="main">
-            
+    <!--Place map outside the regular structure. Need full screen and no app-bar-->
+    <div class="mapcontrol fragment" style="display:none">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Map View</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <p>Unused section</p>
         </section>
-    </div-->
+    </div>
+    <div id="mapcontrol-page">
+        <div id="mapdiv"></div>
+        <img id="snapToCurrent" src="/images/android-location_icon.png" />
+
+        <div id="info-box" class="hidden overlay">
+            <img class="close-icon" src="/images/close.png" />
+            <h3 id="info-title"></h3>
+            <div id="info-desc"></div>
+            <br />
+            Contact: <div id="info-contact"></div>
+
+            <a id="info-details" href="/pages/itemDetails/itemDetails.html">See details</a>
+        </div>
+    </div>
 </body>
 </html>

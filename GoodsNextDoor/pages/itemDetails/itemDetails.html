@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>itemDetails</title>
+
+    <link href="itemDetails.css" rel="stylesheet" />
+    <script src="itemDetails.js"></script>
+</head>
+<body>
+    <div class="itemDetails fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <div id="desc"></div>
+            <div id="thumbnail-div"><img src="/images/Expand.png"/></div>
+            <div id="contact">Contact: <span></span></div>
+            <div id="location">Location: <span></span></div>
+
+            <div id="img-preview-div" class="hidden overlay">
+                <img class="close-icon" src="/images/close.png" />
+                <img id="img-preview" src="/images/Expand.png" />
+            </div>
+        </section>
+    </div>
+</body>
+</html>

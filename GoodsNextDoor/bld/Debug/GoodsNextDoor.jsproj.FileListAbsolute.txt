@@ -14,3 +14,19 @@ C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor
 C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\MobileServices.pri.xml
 C:\Users\Ashik\documents\visual studio 2013\Projects\GoodsNextDoor\GoodsNextDoor\bld\Debug\ProjectArchitectures.txt
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\ReverseMap\resources.pri
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\AppxManifest.xml
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bin\Debug\GoodsNextDoor.build.appxrecipe
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\priconfig.xml
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\priconfig.xml.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\layout.resfiles
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\layout.resfiles.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\resources.resfiles
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\resources.resfiles.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\pri.resfiles
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\pri.resfiles.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\qualifiers.txt
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\qualifiers.txt.intermediate
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\MobileServices.pri.xml
+C:\GIT\GoodsNextDoor\GoodsNextDoor\bld\Debug\ProjectArchitectures.txt

@@ -1,4 +1,13 @@
 ﻿var DBAccess = {};
+
+function showLoader() {
+    document.getElementById("loader").className = "";
+}
+
+function hideLoader() {
+    document.getElementById("loader").className = "hidden";
+}
+
 (function () {
     "use strict";
 

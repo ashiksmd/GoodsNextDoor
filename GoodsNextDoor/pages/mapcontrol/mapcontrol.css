@@ -31,7 +31,7 @@
 		height: 100%;
 	}
 
-#mapdiv  { 
+#mapcontrol-page, #mapdiv  { 
     width:100%;  
     height:100%;  
     border-color:#0094ff;  
@@ -48,4 +48,17 @@
     float: right;
     right: 30px;
     bottom: 30px;
+}
+
+#mapcontrol-page .overlay {
+    width: 15em;
+    height: 10em;
+    left: 7em;
+    top: 20em;
+    background-color: white;
+    color: black;
+}
+
+#mapcontrol-page .overlay .close-icon {
+    top: 0;
 }

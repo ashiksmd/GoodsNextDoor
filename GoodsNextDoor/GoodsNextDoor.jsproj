@@ -287,6 +287,7 @@
     <Content Include="css\ui-themed.css" />
     <Content Include="css\ui-themed.theme-dark.css" />
     <Content Include="css\ui-themed.theme-light.css" />
+    <Content Include="images\ajax-loader.gif" />
     <Content Include="images\android-location_icon.png" />
     <Content Include="images\close.png" />
     <Content Include="images\Expand.png" />
@@ -309,6 +310,9 @@
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
+    <Content Include="pages\itemDetails\itemDetails.css" />
+    <Content Include="pages\itemDetails\itemDetails.html" />
+    <Content Include="pages\itemDetails\itemDetails.js" />
     <Content Include="pages\mapcontrol\mapcontrol.css" />
     <Content Include="pages\mapcontrol\mapcontrol.html" />
     <Content Include="pages\mapcontrol\mapcontrol.js" />

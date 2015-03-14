@@ -1,6 +1,8 @@
 ﻿(function () {
     "use strict";
 
+    var pickedPhoto = null;
+
     WinJS.UI.Pages.define("/pages/post/post.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
@@ -39,6 +41,7 @@
         },
 
         postToDB: function () {
+            showLoader();
             getLoc(function (location) {
                 var item = {};
                 var catList = document.getElementById("categories");
@@ -46,17 +49,48 @@
                 item.title = document.getElementById("title").value;
                 item.description = document.getElementById("desc").innerText;
                 item.contact = document.getElementById("contact").value;
+                
                 item.latitude = location.latitude;
                 item.longitude = location.longitude;
-                item.city = location.zip.slice(0, 4);
+                item.city = location.city;
 
-                DBAccess.postItem(item, function () {
-                    var messageDialog = new Windows.UI.Popups.MessageDialog("Your ad is now online!");
-                    messageDialog.showAsync();
+                if (pickedPhoto) {
+                    item.containerName = "goodsnextdoor";
+                    item.resourceName = pickedPhoto.name;
+                }
+
+                DBAccess.postItem(item, function (e) {
+                    uploadImage(e, function () {
+                        hideLoader();
+                        var messageDialog = new Windows.UI.Popups.MessageDialog("Your ad is now online!");
+                        messageDialog.showAsync();
+                    });
                 });
             });
         }
     });
+
+    function uploadImage(e, callback) {
+        var url = '';
+        var date = new Date().toGMTString().replace('UTC', 'GMT');
+        var data = MSApp.createFileFromStorageFile(pickedPhoto);
+        var xhrOptions = {
+            type: 'PUT',
+            url: e.imageUri + "?" + e.sasQueryString,
+            headers: {
+                'Content-Type': 'image/jpeg',
+                'Content-Length': data.size,
+                'x-ms-date': date,
+                'x-ms-version': '2009-09-19',
+                'x-ms-blob-type': 'BlockBlob',
+            },
+            data: data,
+        };
+        WinJS.xhr(xhrOptions).then(callback, function onerror(error) {
+            // handle error
+            console.log(error);
+        });
+    }
 
     function restoreSession() {
         var categ =  WinJS.Application.sessionState.postCategory;
@@ -93,6 +127,7 @@
             var tempFolder = Windows.Storage.ApplicationData.current.temporaryFolder;
             var asyncCopy = filePicked.copyAsync(tempFolder, filePicked.name, Windows.Storage.NameCollisionOption.replaceExisting);
             asyncCopy.then(function (e) {
+                pickedPhoto = e;
                 //console.log(JSON.stringify(e));
                 document.getElementById("thumbnail").src = "ms-appdata:///temp/" + e.name;
                 document.getElementById("thumbnail-div").className = "";
@@ -123,10 +158,10 @@
 
     function showPhotoPreview(e) {
         document.getElementById("img-preview").src = e.target.src;
-        document.getElementById("img-preview-div").className = "";
+        document.getElementById("img-preview-div").className = "overlay";
     }
 
     function closePhotoPreview() {
-        document.getElementById("img-preview-div").className = "hidden";
+        document.getElementById("img-preview-div").className = "hidden overlay";
     }
 })();
