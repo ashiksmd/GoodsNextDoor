@@ -23,11 +23,6 @@ function hideLoader() {
             WinJS.Navigation.navigate("/pages/post/post.html");
         }, false);
 
-        DBAccess.client = new WindowsAzure.MobileServiceClient(
-            "https://goodsnextdoorws.azure-mobile.net/",
-            "ShFBmkeshFPxcjHKLsxGasopYncMNn49"
-        );
-
         DBAccess.itemsTable = DBAccess.client.getTable('items');
 
         //var items = new WinJS.Binding.List();
@@ -46,20 +41,38 @@ function hideLoader() {
         });
     }
 
+    //Not using this for now. client.login seems to throw NotImplementedException on phone. Works on desktop project.
+    function authenticate() {
+        DBAccess.client.login('microsoftaccount').done(function (result) {
+            // handle successful login
+            console.log("logged in");
+        }, function (error) {
+            // handle failed login
+            console.log("log in failed");
+        });
+    }
+
     app.onactivated = function (eventObject) {
         var activationKind = eventObject.detail.kind;
         var activatedEventArgs = eventObject.detail.detail;
 
         var url;
 
+        DBAccess.client = new WindowsAzure.MobileServiceClient(
+            "https://goodsnextdoorws.azure-mobile.net/",
+            "ShFBmkeshFPxcjHKLsxGasopYncMNn49"
+        );
+
         switch (activationKind) {
             case activation.ActivationKind.launch:
+                //authenticate();       //client.login() not implemented on phone?
+                                        //Works on desktop project. Need alternative for auth.
+
                 url = "/pages/home/home.html";
                 break;
+            //case activation.ActivationKind.webAuthenticationBrokerContinuation:
+             
             case activation.ActivationKind.pickFileContinuation:
-                //case activation.ActivationKind.pickSaveFileContinuation:
-                //case activation.ActivationKind.pickFolderContinuation:
-                //case activation.ActivationKind.webAuthenticationBrokerContinuation:
                 url = "/pages/post/post.html";
                 break;
             default:
